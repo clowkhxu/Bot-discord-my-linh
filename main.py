@@ -165,7 +165,7 @@ def run_flask():
 # ======= Giữ Render luôn hoạt động bằng ping định kỳ =======
 @tasks.loop(minutes=5)
 async def keep_alive():
-    url = "https://your-app-name.onrender.com"  # Thay đổi URL này thành URL thật của bạn trên Render hoặc dịch vụ khác.
+    url = "https://bot-discord-my-linh.onrender.com"  # Thay đổi URL này thành URL thật của bạn trên Render hoặc dịch vụ khác.
     try:
         requests.get(url)
         print("Ping Flask để giữ ứng dụng luôn hoạt động.")
